@@ -4,10 +4,6 @@ name: PR Test
 run-name: ${{ inputs.target_stage && (inputs.pr_head_sha && format('[{0}] {1}', inputs.target_stage, inputs.pr_head_sha) || format('[{0}]', inputs.target_stage)) || '' }}
 
 on:
-  schedule:
-    - cron: '0 1,9,17 * * *'  # Run 3x daily: 2am / 10am / 6pm Pacific (PDT)
-  pull_request:
-    branches: [main]
   workflow_dispatch:
     inputs:
       target_stage:
@@ -32,23 +28,6 @@ on:
         default: false
       test_parallel_dispatch:
         description: "Test parallel dispatch behavior (simulates scheduled run)"
-        required: false
-        type: boolean
-        default: false
-  workflow_call:
-    inputs:
-      git_ref:
-        description: 'Git ref (branch, tag, or SHA) to test. If not provided, uses the default branch.'
-        required: false
-        type: string
-        default: ''
-      run_all_tests:
-        description: "Run all tests (for releasing or testing purpose)"
-        required: false
-        type: boolean
-        default: false
-      skip_stage_health_check:
-        description: "Skip stage health check fast-fail (e.g. for release branch cuts)"
         required: false
         type: boolean
         default: false
