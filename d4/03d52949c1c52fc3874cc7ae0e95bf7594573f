@@ -1,0 +1,16 @@
+python/sglang/srt/managers/scheduler_pp_mixin.py
+  h_e94f2b5704cbef 64-77,179
+test/registered/unit/managers/test_pp_auto_balance.py
+  h_e94f2b5704cbef 6,14-16,22
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "d403d52949c1c52fc3874cc7ae0e95bf7594573f",
+  "prompts": {},
+  "humans": {
+    "h_e94f2b5704cbef": {
+      "author": "chaokunyang <shawn.ck.yang@gmail.com>"
+    }
+  }
+}
