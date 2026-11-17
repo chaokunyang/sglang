@@ -1,0 +1,26 @@
+docs/docs/advanced_features/pipeline_parallelism.mdx
+  h_e94f2b5704cbef 28
+docs/docs/advanced_features/server_arguments.mdx
+  h_e94f2b5704cbef 736-737
+python/sglang/srt/arg_groups/field_order.py
+  h_e94f2b5704cbef 577
+python/sglang/srt/arg_groups/fields/parallel.py
+  h_e94f2b5704cbef 76,78
+python/sglang/srt/arg_groups/validation_hook.py
+  h_e94f2b5704cbef 293-317
+python/sglang/srt/managers/scheduler_pp_mixin.py
+  h_e94f2b5704cbef 170-171,193
+test/registered/unit/managers/test_pp_auto_balance.py
+  h_e94f2b5704cbef 41-43,50,53-55,58-70,138
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "53323947c1a8f6b8e463077a32dd5a121f3b71d4",
+  "prompts": {},
+  "humans": {
+    "h_e94f2b5704cbef": {
+      "author": "chaokunyang <shawn.ck.yang@gmail.com>"
+    }
+  }
+}
